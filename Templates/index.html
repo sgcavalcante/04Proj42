@@ -18,13 +18,14 @@
 
     <div class = "container text-center">
 
-        
+       <img src="{% static 'img/ivad.png' %}" style="margin-top:10%"  class ="img-fluid mx_auto" alt="Logo Ivad">
 
     </div>
 
     <div class = "container text-center" style="margin-top:5%" >
 
-         
+        <a href="{% url 'area_restrita' %}" class="btn btn-lg btn-dark ">Entrar</a>
+        <a href="{% url 'cadastrar_dados' %}" class="btn btn-lg btn-dark ">Cadastrar Dados</a>
         <!--
         <button type="button" class="btn btn-primary">Primary</button>
         <button type="button" class="btn btn-lg btn-dark">Entrar</button>

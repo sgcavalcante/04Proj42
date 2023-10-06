@@ -1,0 +1,139 @@
+
+ 
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Teste</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+     
+     
+    
+</head>
+<body class = "bg-success text-center">
+    <div class="p-3 mb-2 bg-secondary text-white " style="height: 45px">
+            <label  style="margin-padding:2px" >SisGerbar</label>
+
+    </div>
+    
+    <div >
+        <br>
+        <h1>ESP 8266</h1>
+        <br>
+        <div align = "center">
+            <label class =" fonte_protocolo_dados_tamanho fonte_cor_protocolo_dados" for="">Protocolo de Comunição[sgcprotocol-Entrada de Dados]</label>
+            <br>
+            <textarea name="protocolo" id="protocolo" cols="300" rows="1"></textarea>
+        
+        </div>
+        <br>
+    </div>
+    <!--
+    Seção com Tabela    
+    <div class = "p-3 mb-2 bg-primary text-dark">
+        <div class="container text-center">
+            <div class="row">
+            <div class="col">
+                Sensor 
+                <div class="col">
+                       
+                    <label for="sensor1">1</label>
+                    <div></div>
+                    <label for="sensor2">2</label>
+                    <div></div>
+                    <label for="sensor3">3</label>
+                
+                </div>
+            </div>
+            <div class="col">
+                Descrição
+                <div class="text-bg-success p-3">
+                       
+                    <label for="sensor1">1</label>
+                    <div></div>
+                    <label for="sensor2">2</label>
+                    <div></div>
+                    <label for="sensor3">3</label>
+                </div>
+            </div>    
+                <div class="col">
+                    Status
+                    <div class="col">
+                        
+                        <label for="sensor1">1</label>
+                        <div></div>
+                        <label for="sensor2">2</label>
+                        <div></div>
+                        <label for="sensor3">3</label>
+                    </div>
+                </div>
+                <textÁrea name="text" id="text" cols="30" rows="10"></textÁrea>
+            </div>
+        </div>
+        
+    </div>
+    -->
+        <!-- Área de Sensores Reed Swuitch-->
+        <div align ="center">
+            <h1 class = " ">Sensor Reed Switch</h1>
+                <br>
+                <label class = "btn btn-warning btn-lg">Área 1</label>
+                <label class = "btn btn-warning btn-lg">Área 2</label>
+                <label class = "btn btn-warning btn-lg">Área 3</label>
+                <br>
+                <br>
+                <button type="Teste" class = "btn btn-danger btn-lg">Ação 1</button> 
+                <button type="Teste" class = "btn btn-danger btn-lg">Ação 2</button>   
+                <button type="Teste" class = "btn btn-danger btn-lg">Ação 3</button>  
+                 
+        </div>
+        <br>
+
+        <!-- Área de Sensores Presença--> 
+        <div align ="center">
+            <h1 class = "fundo_black titulo_destaque fonte_cor_tituli_destaque fonte_titulo_destaque_alinhamento fonte_titulo_destque_tamanho">Sensor de Presença</h1>
+            <!-- botao com duas classes
+            <button tupe="Teste" class = "botao-red1 botao-red">Teste1</button>    
+            -->     <br>
+            <label class = "btn btn-warning btn-lg">Área 1</label>
+            <label class = "btn btn-warning btn-lg">Área 2</label>
+            <label class = "btn btn-warning btn-lg">Área 3</label>
+            <br>
+            <br>
+            <button type="Teste" class = "btn btn-danger btn-lg">Ação 1</button> 
+            <button type="Teste" class = "btn btn-danger btn-lg">Ação 2</button>   
+            <button type="Teste" class = "btn btn-danger btn-lg">Ação 3</button>  
+        </div>
+        <br>
+    <div>
+        <a href="{% url 'index' %}" class="btn btn-dark">Início</a> 
+        <!--Seção de imagens
+        <img src="https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png" alt=" imagem python" width="500">
+        <img src="img/logo-python01.png" alt="logo alternativa" width="500">
+        -->
+    </div>
+    <div>
+         
+        
+    <h1>JavaScript</h1>
+        
+        <button onclick="document.getElementById('myImage').src='pic_bulbon.png'">Turn On the Light</button>
+            <img id='myImage' src="img/pic_bulbon.png" style = "width:100px" alt="">
+        <button 
+            onclick="document.getElementById('myImage').src='pic_bulboff.png'"> Turn Off the Light
+        </button>
+        <!-- teste javascript -->
+             
+            <button onclick="saudacao()">Clique em mim</button>
+        </div>
+     <div class = " text-white text-center"  >
+    <footer class="bg-secondary" style="margin-top:3cm; height:2cm; padding-bottom:2cm">
+            <p>Ventos Solares Sistemas <br> engenharia@ventosolares.com.br <br>(xx.9.8888.8888)</p>
+        </footer>
+    </div>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+                          
+</body>
+</html>

@@ -4,5 +4,9 @@ from django.shortcuts import render
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
 
-def index(requisicao):
-    return render(requisicao,'index.html') #index.html
+def index(request):
+    return render(request,'index.html') #index.html
+
+#def area_restrita(request):
+    #return render(request,'area_restrita')
+
