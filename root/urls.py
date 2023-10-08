@@ -21,4 +21,6 @@ from app01 import urls
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('app01.urls')),
+    path('',include('apps.appLogin.urls')),
 ]
+
