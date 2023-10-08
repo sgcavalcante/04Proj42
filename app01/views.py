@@ -8,6 +8,9 @@ from app01.models import Dados
 from .forms import DadosForm
 
 # Create your views here.
+def login(request):
+    return render(request,'login.html')
+
 def index(request):
     return render(request,'index.html')
 
