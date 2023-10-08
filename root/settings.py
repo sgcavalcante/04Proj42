@@ -28,9 +28,9 @@ SECRET_KEY = str(os.getenv('CHAVE_SECRETA'))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['web-production-3c8ea.up.railway.app/','127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
-CSRF_TRUSTED_ORIGINS = ['https://web-production-3c8ea.up.railway.app/']
+#CSRF_TRUSTED_ORIGINS = ['https://web-production-3c8ea.up.railway.app/']
 # Application definition
 
 INSTALLED_APPS = [
