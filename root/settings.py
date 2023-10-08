@@ -85,16 +85,16 @@ DATABASES = {
 }
 
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.mysql',
-#        'NAME': 'db_dados',
-##        'USER': 'root',
-##        'PASSWORD': '',
-#        'HOST': 'localhost',  # Ou o endereço IP do seu servidor MySQL
-##        'PORT': '3306',       # Porta padrão do MySQL
-#    }
-#}
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'db_dados',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': 'localhost',  # Ou o endereço IP do seu servidor MySQL
+        'PORT': '3306',       # Porta padrão do MySQL
+    }
+}
 
 
 
