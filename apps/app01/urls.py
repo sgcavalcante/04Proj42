@@ -1,5 +1,5 @@
 from django.urls import path
-from apps.app01.views import index,area_restrita,cadastrar_dados,listar_dados,remover,editar
+from app01.views import index,area_restrita,cadastrar_dados,listar_dados,remover,editar
 urlpatterns = [
                 
                 path('index',index,name='index'),
