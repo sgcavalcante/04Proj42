@@ -11,7 +11,7 @@ from apps.app01.forms import DadosForm
 
 
 def index(request):
-    return render(request,'index.html')
+    return render(request,'app01/index.html')
     
 def area_restrita(request):
     return render(request,'area_restrita.html')
