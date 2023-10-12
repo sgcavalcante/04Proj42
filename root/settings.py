@@ -28,9 +28,11 @@ SECRET_KEY = str(os.getenv('CHAVE_SECRETA'))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+#ALLOWED_HOSTS = ['127.0.0.1']
 
-#CSRF_TRUSTED_ORIGINS = ['https://web-production-3c8ea.up.railway.app/']
+ALLOWED_HOSTS = ['setupapp2-production.up.railway.app','127.0.0.1']
+
+CSRF_TRUSTED_ORIGINS = ['https://setupapp2-production.up.railway.app']
 # Application definition
 
 INSTALLED_APPS = [
@@ -42,7 +44,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #'app01.apps.App01Config', #ou apenas app01
     'apps.app01',
-     
     'apps.appLogin',
 ]
 
