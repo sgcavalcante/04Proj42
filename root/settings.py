@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path,os
 from dotenv import load_dotenv
-import dj_database_url
+#import dj_database_url
 
 load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -88,8 +88,8 @@ WSGI_APPLICATION = 'root.wsgi.application'
 #    }
 #}
 
-DATABASES = {'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))}
-'''
+#DATABASES = {'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))}
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -100,7 +100,7 @@ DATABASES = {
         'PORT': '3306',       # Porta padrão do MySQL
     }
 }
-'''
+
 
 
 # Password validation
