@@ -93,11 +93,11 @@ WSGI_APPLICATION = 'root.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'db_dados',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',  # Ou o endereço IP do seu servidor MySQL
-        'PORT': '3306',       # Porta padrão do MySQL
+        'NAME': 'railway',#'db_dados',
+        'USER': 'root',#'root',
+        'PASSWORD':'CapDSw7qgFt21S0H2LuA',# '',
+        'HOST': 'containers-us-west-210.railway.app',#'localhost',  # Ou o endereço IP do seu servidor MySQL
+        'PORT': '6300'#,'3306',       # Porta padrão do MySQL
     }
 }
 
