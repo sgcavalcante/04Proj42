@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'root.wsgi.application'
 #    }
 #}
 
-
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -98,7 +98,7 @@ DATABASES = {
         'PORT': '3306',       # Porta padrão do MySQL
     }
 }
-
+'''
 
 
 # Password validation
