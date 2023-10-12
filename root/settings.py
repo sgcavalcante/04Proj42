@@ -42,8 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     #'app01.apps.App01Config', #ou apenas app01
-    'apps.app01',
-     
+    'apps.app01',     
     'apps.appLogin',
 ]
 
@@ -92,7 +91,7 @@ WSGI_APPLICATION = 'root.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'mysql://root:CapDSw7qgFt21S0H2LuA@containers-us-west-210.railway.app:6300/railway',
         'NAME': 'railway',#'db_dados',
         'USER': 'root',#'root',
         'PASSWORD':'CapDSw7qgFt21S0H2LuA',# '',
