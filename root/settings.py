@@ -87,8 +87,9 @@ WSGI_APPLICATION = 'root.wsgi.application'
 #    }
 #}
 
-#DATABASES = {'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))}
-
+DATABASE_URL = os.getenv("MYSQL_URL")
+DATABASES = {'default': dj_database_url.config(default=DATABASE_URL,conn_max_age=20)}
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -100,7 +101,7 @@ DATABASES = {
     }
 }
 
-
+'''
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
