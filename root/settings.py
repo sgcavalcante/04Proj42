@@ -91,8 +91,10 @@ WSGI_APPLICATION = 'root.wsgi.application'
 
 '''
 Configuração para Postgree SQL do Railway
+'''
 DATABASE_URL = os.getenv("DATABASE_URL")
 DATABASES = {'default': dj_database_url.config(default=DATABASE_URL,conn_max_age=20)}
+
 '''
 
 DATABASES = {
@@ -105,7 +107,7 @@ DATABASES = {
         'PORT': '3306',#'6300'#,'3306',       # Porta padrão do MySQL
     }
 }
-
+'''
 
 
 # Password validation
