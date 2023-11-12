@@ -88,21 +88,24 @@ WSGI_APPLICATION = 'root.wsgi.application'
 #    }
 #}
 
+'''
+Configuração para Postgree SQL do Railway
 DATABASE_URL = os.getenv("DATABASE_URL")
 DATABASES = {'default': dj_database_url.config(default=DATABASE_URL,conn_max_age=20)}
 '''
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'railway',#'db_dados',
+        'NAME': 'db_dados', #'railway',#'db_dados',
         'USER': 'root',#'root',
-        'PASSWORD':'CapDSw7qgFt21S0H2LuA',# '',
-        'HOST': 'containers-us-west-210.railway.app',#'localhost',  # Ou o endereço IP do seu servidor MySQL
-        'PORT': '6300'#,'3306',       # Porta padrão do MySQL
+        'PASSWORD':'',#CapDSw7qgFt21S0H2LuA',# '',
+        'HOST': 'localhost',#'containers-us-west-210.railway.app',#'localhost',  # Ou o endereço IP do seu servidor MySQL
+        'PORT': '3306',#'6300'#,'3306',       # Porta padrão do MySQL
     }
 }
 
-'''
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators

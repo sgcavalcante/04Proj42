@@ -8,6 +8,7 @@ from .forms import RegistrationForm
 
 # Create your views here.
 
+#Fazer novo Acesso
 def login(request):
     formulario = LoginForm()
     if request.method == 'POST':
@@ -29,7 +30,7 @@ def login(request):
     
     return render(request,'Login/login.html',{'form':formulario})
 
-
+#Registrar Novo Usuário no Sistema
 def registro(request):
     if request.method == 'POST':
         form = RegistrationForm(request.POST)

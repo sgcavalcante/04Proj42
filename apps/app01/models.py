@@ -7,6 +7,9 @@ from django.db import models
 from django.db import models
 
 # Create your models here.
+
+
+
 class Dados(models.Model):
     nome = models.CharField(
         max_length=120,
@@ -49,3 +52,6 @@ class Dados(models.Model):
         null=False,
         blank=False
     )
+
+
+
